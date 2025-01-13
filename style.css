@@ -1,4 +1,37 @@
-.number_buttons {
-    width: 50px;
-    height: 50px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 200px;
 }
+
+.numbers-container, .operations-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.numbers-container {
+    flex: 2;
+}
+.operations-container {
+    flex: 1;
+}
+
+
+.number-buttons {
+    /* margin: 500px; */
+    flex: 0 0 calc(33% - 10px);
+    height: 200px;
+    cursor: pointer;
+}
+
+.operations {
+    flex: 0 0 calc(50% - 10px);
+    height: 200px;
+    cursor: pointer;
+}
+
+
